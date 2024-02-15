@@ -37,8 +37,8 @@ export async function TesteLogin() {
   try {
     await page.goto('link');
 
-    page.locator('input[name="email"]').type('eandrade@tecnologiaunica.com.br');
-    page.locator('input[name="password"]').type('Teste@123');
+    page.locator('input[name="email"]').type('login_atualizar');
+    page.locator('input[name="password"]').type('senha_atualizar');
 
     const submitButton = page.locator('button[id="btnLogin"]');
 
